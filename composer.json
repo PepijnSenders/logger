@@ -9,6 +9,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "illuminate/support": "~4.2"
+        "illuminate/support": "~4.2",
+        "monolog/monolog": "~1.12"
     }
 }
