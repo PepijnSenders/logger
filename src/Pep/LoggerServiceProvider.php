@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class LoggerServiceProvider extends ServiceProvider {
 
   public function boot() {
-    $this->package('pep/logger');
+    $this->package('pep/logger', 'logger', realpath(__DIR__));
   }
 
   public function register() {

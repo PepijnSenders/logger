@@ -11,5 +11,10 @@
     "require": {
         "illuminate/support": "~4.2",
         "monolog/monolog": "~1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pep\\Logger\\": "src/"
+        }
     }
 }
