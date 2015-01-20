@@ -1,7 +1,7 @@
 Logger
 ------
 
-Laravel multilogger component, to log easily to different files.
+Laravel multilogger component, to make logging to different files easy.
 
 Installation:
 
