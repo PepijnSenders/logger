@@ -16,5 +16,9 @@
         "psr-4": {
             "Pep\\Logger\\": "src/Pep"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4",
+        "mockery/mockery": "~0.9"
     }
 }

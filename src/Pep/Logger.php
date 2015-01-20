@@ -5,7 +5,7 @@ namespace Pep\Logger;
 use Monolog\Logger as MonologLogger;
 use Monolog\Handler\StreamHandler;
 use Illuminate\Support\Str;
-use Config;
+use Illuminate\Support\Facades\Config;
 
 class Logger {
 
@@ -14,7 +14,13 @@ class Logger {
   public static function create($name = '', $level = MonologLogger::WARNING) {
     $logger = new MonologLogger($name);
 
-    $logger->pushHandler(new StreamHandler(Config::get('pep/logger::path') . "/$name.log", $level));
+    $configPath = Config::get('pep/logger::path');
+
+    if (!$configPath) {
+      throw new LoggerException('Define a path in package config.');
+    }
+
+    $logger->pushHandler(new StreamHandler($configPath . "/$name.log", $level));
     self::$loggers[$level] = $logger;
 
     return $logger;
