@@ -1,4 +1,4 @@
-Logger
+Logger ![Build status](https://api.travis-ci.org/PepijnSenders/logger.png)
 ------
 
 Laravel multilogger component, to make logging to different files easy.
