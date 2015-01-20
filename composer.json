@@ -1,0 +1,20 @@
+{
+    "name": "pep/logger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pepijn Senders",
+            "email": "p.senders92@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "~4.2",
+        "monolog/monolog": "~1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pep\\Logger\\": "src/Pep"
+        }
+    }
+}
